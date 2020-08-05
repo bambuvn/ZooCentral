@@ -13,123 +13,50 @@
     <link rel="stylesheet" href="js/assets/owl.theme.default.min.css">
     <script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
-    <script src="js/zooCentral.js"></script>
     <link rel="stylesheet" type="text/css" href="css/zoomslider.css" />
     <link rel="stylesheet" type="text/css" href="css/zooCentral.css" />
     <title>Central Zoo</title>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel();
+        }
+        );
+    </script>
 </head>
 
 <body>
     <header>
 
-        <div class="shadow"
-            data-zs-src='["images/shadow/banner1.png", "images/shadow/banner2.png", "images/shadow/banner3.png", "images/shadow/banner4.png", "images/shadow/banner5.png", "images/shadow/banner6.png", "images/shadow/banner7.png"]'>
+        <div id="shadow"
+            data-zs-src='["images/shadow/banner1.png", "images/shadow/banner2.png", "images/shadow/banner3.png", "images/shadow/banner4.png", "images/shadow/banner5.png", "images/shadow/banner6.png", "images/shadow/banner7.png"]'
+            data-zs-overlay="dots">
             <div class="shadow-inner-content">
-                <h1 class="text-shadow1"><span>WELCOME BACK TO THE ZOO!</span></h1>
+                <h1><span>WELCOME BACK TO THE ZOO!</span></h1>
             </div>
             <nav class="navbar navbar-expand-md navbar-dark fixed-top nav-top" id="nav-top">
                 <div class="container">
-                    <div class="effecLogo">
-                        <a href="#" class="navbar">
-                            <figure><img src="images/logo/logo1.png" alt="Logo" class="logo"></figure>
-                        </a>
-                    </div>
+                    <a href="#" class="navbar-brand">Brand</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse effUrl" id="menu">
-                        <ul class="navbar-nav nav-menu">
-                            <li class="nav-item pr-3"><a class="nav-link" href="tickets.html">Tickes</a></li>
-                            <li class="nav-item dropdown megamenu  pr-3">
-                                <a id="megamenu" href="" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false" class="nav-link ">Animals</a>
-                                <div aria-labelledby="megamenu" class="dropdown-menu border-0 p-0 m-0"
-                                    style="background:rgba(0,0,0,0);">
-                                    <div class="submenu">
-                                        <div class="row text-light rounded-0 m-0 shadow-lg"
-                                            style="background:rgba(0,0,0,0.5);">
-                                            <div class="col-12">
-                                                <div class="p-4">
-                                                    <div class="row">
-                                                        <div class="col-sm-6 col-lg-3 mb-4">
-                                                            <h6 class="font-weight-bold text-uppercase">Heading 1</h6>
-                                                            <ul class="list-unstyled">
-                                                                <li class="nav-item"><a href="#"
-                                                                        class="nav-link text-small pb-0">Unique
-                                                                        Features</a></li>
-                                                                <li class="nav-item"><a href="#"
-                                                                        class="nav-link text-small pb-0 ">Image
-                                                                        Responsive</a></li>
-                                                                <li class="nav-item"><a href="#"
-                                                                        class="nav-link text-small pb-0 ">Auto
-                                                                        Carousel</a></li>
-                                                                <li class="nav-item"><a href="#"
-                                                                        class="nav-link text-small pb-0 ">Newsletter
-                                                                        Form</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-sm-6 col-lg-3 mb-4">
-                                                            <h6 class="font-weight-bold text-uppercase">Heading 2</h6>
-                                                            <ul class="list-unstyled">
-                                                                <li class="nav-item"><a href=""
-                                                                        class="nav-link text-small pb-0 ">Unique
-                                                                        Features</a></li>
-                                                                <li class="nav-item"><a href=""
-                                                                        class="nav-link text-small pb-0 ">Image
-                                                                        Responsive</a></li>
-                                                                <li class="nav-item"><a href=""
-                                                                        class="nav-link text-small pb-0 ">Auto
-                                                                        Carousel</a></li>
-                                                                <li class="nav-item"><a href=""
-                                                                        class="nav-link text-small pb-0 ">Newsletter
-                                                                        Form</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-sm-6 col-lg-3 mb-4">
-                                                            <h6 class="font-weight-bold text-uppercase">Heading 3</h6>
-                                                            <ul class="list-unstyled">
-                                                                <li class="nav-item"><a href=""
-                                                                        class="nav-link text-small pb-0 ">Unique
-                                                                        Features</a></li>
-                                                                <li class="nav-item"><a href=""
-                                                                        class="nav-link text-small pb-0 ">Image
-                                                                        Responsive</a></li>
-                                                                <li class="nav-item"><a href=""
-                                                                        class="nav-link text-small pb-0 ">Auto
-                                                                        Carousel</a></li>
-                                                                <li class="nav-item"><a href=""
-                                                                        class="nav-link text-small pb-0 ">Newsletter
-                                                                        Form</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-sm-6 col-lg-3 mb-4">
-                                                            <h6 class="font-weight-bold text-uppercase">Heading 4</h6>
-                                                            <ul class="list-unstyled">
-                                                                <li class="nav-item"><a href=""
-                                                                        class="nav-link text-small pb-0 ">Unique
-                                                                        Features</a></li>
-                                                                <li class="nav-item"><a href=""
-                                                                        class="nav-link text-small pb-0 ">Image
-                                                                        Responsive</a></li>
-                                                                <li class="nav-item"><a href=""
-                                                                        class="nav-link text-small pb-0 ">Auto
-                                                                        Carousel</a></li>
-                                                                <li class="nav-item"><a href=""
-                                                                        class="nav-link text-small pb-0 ">Newsletter
-                                                                        Form</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="tickets.html">Tickets</a></li>
+                            <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="nav-item dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Animals
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
                                 </div>
+                              </div>
                             </li>
-                            <li class="nav-item pr-3"><a class="nav-link" href="zoomap.html">Event</a></li>
-                            <li class="nav-item pr-3"><a class="nav-link" href="zoomap.html">Zoo Map</a></li>
-                            <li class="nav-item pr-3"><a class="nav-link" href="development_team.html">Development
-                                    Team</a>
+                            <li class="nav-item"><a class="nav-link" href="zoomap.html">Zoo Map</a></li>
+                            <li class="nav-item"><a class="nav-link" href="development_team.html">Development Team</a>
                             </li>
                         </ul>
                     </div>
@@ -145,135 +72,108 @@
                         <div class="carousel  event-home">
                             <div class="owl-carousel shadow-sm bg-white rounded">
                                 <div class="item">
-                                    <div class="effectEvent">
-                                        <div class="eh-events-img"
-                                            style="background-image: url('https://www.centralfloridazoo.org/wp-content/uploads/2020/01/sunset1.jpg');">
-                                        </div>
+                                    <div class="eh-events-img"
+                                        style="background-image: url('https://www.centralfloridazoo.org/wp-content/uploads/2020/01/sunset1.jpg');">
                                     </div>
                                     <div class="card-body">
                                         <p class="grey">UPCOMING EVENTS - August 20, 2020</p>
-                                        <h2 class="card-title"><a href="#" class="text-decoration-none">Sunset at the
-                                                Zoo</a></h2>
+                                        <h2 class="card-title"><a href="#" class="text-decoration-none">Sunset at the Zoo</a></h2>
                                         <p class="card-text">Sunset at the Zoo is a wild adults-only evening at the Zoo!
                                         </p>
 
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="effectEvent">
-                                        <div class="eh-events-img"
-                                            style="background-image: url('https://www.centralfloridazoo.org/wp-content/uploads/2020/01/sunset1.jpg');">
-                                        </div>
+                                    <div class="eh-events-img"
+                                        style="background-image: url('https://www.centralfloridazoo.org/wp-content/uploads/2020/01/sunset1.jpg');">
                                     </div>
                                     <div class="card-body">
                                         <p class="grey">UPCOMING EVENTS - August 20, 2020</p>
-                                        <h2 class="card-title"><a href="#" class="text-decoration-none">Sunset at the
-                                                Zoo</a></h2>
+                                        <h2 class="card-title"><a href="#" class="text-decoration-none">Sunset at the Zoo</a></h2>
                                         <p class="card-text">Sunset at the Zoo is a wild adults-only evening at the Zoo!
                                         </p>
 
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="effectEvent">
-                                        <div class="eh-events-img"
-                                            style="background-image: url('https://www.centralfloridazoo.org/wp-content/uploads/2020/01/sunset1.jpg');">
-                                        </div>
+                                    <div class="eh-events-img"
+                                        style="background-image: url('https://www.centralfloridazoo.org/wp-content/uploads/2020/01/sunset1.jpg');">
                                     </div>
                                     <div class="card-body">
                                         <p class="grey">UPCOMING EVENTS - August 20, 2020</p>
-                                        <h2 class="card-title"><a href="#" class="text-decoration-none">Sunset at the
-                                                Zoo</a></h2>
+                                        <h2 class="card-title"><a href="#" class="text-decoration-none">Sunset at the Zoo</a></h2>
                                         <p class="card-text">Sunset at the Zoo is a wild adults-only evening at the Zoo!
                                         </p>
 
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="effectEvent">
-                                        <div class="eh-events-img"
-                                            style="background-image: url('https://www.centralfloridazoo.org/wp-content/uploads/2020/01/sunset1.jpg');">
-                                        </div>
+                                    <div class="eh-events-img"
+                                        style="background-image: url('https://www.centralfloridazoo.org/wp-content/uploads/2020/01/sunset1.jpg');">
                                     </div>
                                     <div class="card-body">
                                         <p class="grey">UPCOMING EVENTS - August 20, 2020</p>
-                                        <h2 class="card-title"><a href="#" class="text-decoration-none">Sunset at the
-                                                Zoo</a></h2>
+                                        <h2 class="card-title"><a href="#" class="text-decoration-none">Sunset at the Zoo</a></h2>
                                         <p class="card-text">Sunset at the Zoo is a wild adults-only evening at the Zoo!
                                         </p>
 
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="effectEvent">
-                                        <div class="eh-events-img"
-                                            style="background-image: url('https://www.centralfloridazoo.org/wp-content/uploads/2020/01/sunset1.jpg');">
-                                        </div>
+                                    <div class="eh-events-img"
+                                        style="background-image: url('https://www.centralfloridazoo.org/wp-content/uploads/2020/01/sunset1.jpg');">
                                     </div>
                                     <div class="card-body">
                                         <p class="grey">UPCOMING EVENTS - August 20, 2020</p>
-                                        <h2 class="card-title"><a href="#" class="text-decoration-none">Sunset at the
-                                                Zoo</a></h2>
+                                        <h2 class="card-title"><a href="#" class="text-decoration-none">Sunset at the Zoo</a></h2>
                                         <p class="card-text">Sunset at the Zoo is a wild adults-only evening at the Zoo!
                                         </p>
 
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="effectEvent">
-                                        <div class="eh-events-img"
-                                            style="background-image: url('https://www.centralfloridazoo.org/wp-content/uploads/2020/01/sunset1.jpg');">
-                                        </div>
+                                    <div class="eh-events-img"
+                                        style="background-image: url('https://www.centralfloridazoo.org/wp-content/uploads/2020/01/sunset1.jpg');">
                                     </div>
                                     <div class="card-body">
                                         <p class="grey">UPCOMING EVENTS - August 20, 2020</p>
-                                        <h2 class="card-title"><a href="#" class="text-decoration-none">Sunset at the
-                                                Zoo</a></h2>
+                                        <h2 class="card-title"><a href="#" class="text-decoration-none">Sunset at the Zoo</a></h2>
                                         <p class="card-text">Sunset at the Zoo is a wild adults-only evening at the Zoo!
                                         </p>
 
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="effectEvent">
-                                        <div class="eh-events-img"
-                                            style="background-image: url('https://www.centralfloridazoo.org/wp-content/uploads/2020/01/sunset1.jpg');">
-                                        </div>
+                                    <div class="eh-events-img"
+                                        style="background-image: url('https://www.centralfloridazoo.org/wp-content/uploads/2020/01/sunset1.jpg');">
                                     </div>
                                     <div class="card-body">
                                         <p class="grey">UPCOMING EVENTS - August 20, 2020</p>
-                                        <h2 class="card-title"><a href="#" class="text-decoration-none">Sunset at the
-                                                Zoo</a></h2>
+                                        <h2 class="card-title"><a href="#" class="text-decoration-none">Sunset at the Zoo</a></h2>
                                         <p class="card-text">Sunset at the Zoo is a wild adults-only evening at the Zoo!
                                         </p>
 
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="effectEvent">
-                                        <div class="eh-events-img"
-                                            style="background-image: url('https://www.centralfloridazoo.org/wp-content/uploads/2020/01/sunset1.jpg');">
-                                        </div>
+                                    <div class="eh-events-img"
+                                        style="background-image: url('https://www.centralfloridazoo.org/wp-content/uploads/2020/01/sunset1.jpg');">
                                     </div>
                                     <div class="card-body">
                                         <p class="grey">UPCOMING EVENTS - August 20, 2020</p>
-                                        <h2 class="card-title"><a href="#" class="text-decoration-none">Sunset at the
-                                                Zoo</a></h2>
+                                        <h2 class="card-title"><a href="#" class="text-decoration-none">Sunset at the Zoo</a></h2>
                                         <p class="card-text">Sunset at the Zoo is a wild adults-only evening at the Zoo!
                                         </p>
 
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="effectEvent">
-                                        <div class="eh-events-img"
-                                            style="background-image: url('https://www.centralfloridazoo.org/wp-content/uploads/2020/01/sunset1.jpg');">
-                                        </div>
+                                    <div class="eh-events-img"
+                                        style="background-image: url('https://www.centralfloridazoo.org/wp-content/uploads/2020/01/sunset1.jpg');">
                                     </div>
                                     <div class="card-body">
                                         <p class="grey">UPCOMING EVENTS - August 20, 2020</p>
-                                        <h2 class="card-title"><a href="#" class="text-decoration-none">Sunset at the
-                                                Zoo</a></h2>
+                                        <h2 class="card-title"><a href="#" class="text-decoration-none">Sunset at the Zoo</a></h2>
                                         <p class="card-text">Sunset at the Zoo is a wild adults-only evening at the Zoo!
                                         </p>
 
@@ -288,11 +188,12 @@
                                 class="btn btn-primary border border-0">View More Events</a>
                         </div>
                     </div>
-                    <div class="container-sm border border-5 p-3 bg-white rounded w-50 position-relative"
+                    <div class="container-sm border border-5 shadow p-3 bg-white rounded w-50"
                         style="background-color: #fff; height: 240px; min-width: 540px;">
                         <h3 class="">Purchase Tickets Online</h3>
                         <a class="btn btn-warning" style="width: 150px;" href="/tickets">Buy Now</a>
-                        <img alt="" class="imgBuy" src="./images/ticket/buy.png">
+                        <img alt="" class="position-relative" style="right: -140px; top: -120px;"
+                            src="./images/ticket/buy.png">
                     </div>
                 </div>
             </main>
@@ -446,7 +347,7 @@
         owl.owlCarousel({
             margin: 1,
             loop: true,
-            autoplay: false,
+            autoplay: true,
             autoplayTimeout: 3000,
             dots: false,
             responsive: {
