@@ -5,166 +5,104 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="Description" content="Enter your description here" />
+	<meta name="Description" content="Zoo Central" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="http://maps.google.com/maps/api/js?senser=false" type="text/javascript"></script>
-	<link rel="stylesheet" href="js/assets/owl.carousel.min.css">
-	<link rel="stylesheet" href="js/assets/owl.theme.default.min.css">
-	<script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
-	<script src="js/jarallax.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
 	<script src="js/zooCentral.js"></script>
-	<script src="js/eventContent.js"></script>
+	<script src="js/jarallax.min.js"></script>
+    <script src="js/eventContent.js"></script>
+    <script src="js/jquery.zoom.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/zoomslider.css" />
 	<link rel="stylesheet" type="text/css" href="css/zooCentral.css" />
-    <link rel="stylesheet" type="text/css" href="css/util.css">
-    <link rel="stylesheet" type="text/css" href="css/contact.css">
-	<title>Central Zoo</title>
+	<link rel="stylesheet" href="js/assets/owl.carousel.min.css">
+    <title>Central Zoo</title>
+    
 </head>
 
 <body>
 	<header>
-		<nav class="navbar navbar-expand-md navbar-dark fixed-top nav-top" id="nav-top">
-			<div class="container">
-				<div class="effecLogo">
-					<a href="#HomePage" class="navbar home homePage">
-						<figure><img src="images/logo/logo2.png" alt="Logo" class="logo" id="logo"></figure>
-					</a>
-				</div>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu"
-					id="buttonToggler">
-					<div class="bar1"></div>
-					<div class="bar2"></div>
-					<div class="bar3"></div>
-				</button>
-				<div class="collapse navbar-collapse effUrl" id="menu">
-					<ul class="navbar-nav nav-menu">
-						<li class="nav-item pl-3"><a class="nav-link" href="tickets.html">Tickes</a></li>
-						<li class="nav-item pl-3"><a class="nav-link" href="#">Animals</a>
-						</li>
-						<li class="nav-item pl-3"><a class="nav-link event" href="#Events">Event</a></li>
-						<li class="nav-item pl-3"><a class="nav-link map" href="#Map">Zoo Map</a></li>
-						<li class="nav-item pl-3"><a class="nav-link contact" href="#Map">Contact</a></li>
-						<li class="nav-item pl-3"><a class="nav-link" href="development_team.html">Development
-								Team</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		<div class="shadow jarallax"  id="header"
-			data-zs-src='["images/shadow/banner1.png", "images/shadow/banner2.png", "images/shadow/banner3.png", "images/shadow/banner4.png", "images/shadow/banner5.png", "images/shadow/banner6.png", "images/shadow/banner7.png"]'>
-			<div class="shadow-inner-content">
-				<h1 class="text-shadow1"><span>WELCOME BACK TO THE ZOO!</span></h1>
-			</div>
-			<div class="header-event d-none">
-				<img class="jarallax-img" src="images/event/ev-header.jpg" alt="Event">
-				<div class="container text-center">
-					<div class="col-md-12 header-content">
-						<div class="icon-area">
-							<img alt="post icon" data-src="images/event/events.png" id="iconHeader"
-								src="images/event/events.png"><noscript><img src="images/event/events.png"
-									alt="post icon"></noscript>
-						</div>
-						<div class="gray-line"></div>
-						<h1 id="title"></h1>
-						<div class="events-date-info">
-							<h4 id="date"></h4>
-							<h2 id="times"></h2>
-							<h2 id="address"></h2>
-						</div>
+		<div class="shadow jarallax">
+			<img class="jarallax-img" src="images/maps/header-map.jpg" alt="Header">
+			<div class="container text-center">
+				<div class="col-md-12 header-content" id="header">
+					<div class="icon-area">
+						<img alt="post icon" data-src="images/maps/animals_header.png" class=" lazyloaded"
+							src="images/maps/animals_header.png"><noscript><img src="images/maps/animals_header.png"
+								alt="post icon"></noscript>
+					</div>
+					<div class="gray-line"></div>
+					<h1 id="title">Map of the Zoo</h1>
+					<div class="events-date-info">
+						<h4 id="date">Plan your trek around the Zoo!</h4>
+						<h2 id="times"></h2>
+						<h2 id="address"></h2>
 					</div>
 				</div>
-				<div class="gardient-dark"></div>
 			</div>
+			<nav class="navbar navbar-expand-md navbar-dark fixed-top nav-top" id="nav-top" style="z-index: 9999;">
+				<div class="container">
+					<div class="effecLogo">
+						<a href="index.html" class="navbar">
+							<figure><img src="images/logo/logo2.png" alt="Logo" class="logo" id="logo"></figure>
+						</a>
+					</div>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu"
+						id="buttonToggler">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</button>
+					<div class="collapse navbar-collapse effUrl" id="menu">
+						<ul class="navbar-nav nav-menu">
+							<li class="nav-item pl-3"><a class="nav-link" href="tickets.html">Tickes</a></li>
+							<li class="nav-item pl-3"><a class="nav-link" href="#">Animals</a>
+							</li>
+							<li class="nav-item pl-3"><a class="nav-link" href="zoomap.html">Event</a></li>
+							<li class="nav-item pl-3"><a class="nav-link" href="zoomap.html">Zoo Map</a></li>
+							<li class="nav-item pl-3"><a class="nav-link" href="development_team.html">Development
+									Team</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div class="gardient-dark"></div>
 		</div>
 	</header>
 	<section class="container-fluid" id="bd-content">
 		<div class="hew-sec">
-			<main id="content">
-				<div class="container">
-					<div class="col-md-12">
-						<div class="carousel  event-home">
-							<div class="owl-carousel shadow-sm bg-white rounded">
-								<div class="item">
-									<div class="effectEvent">
-										<div class="eh-events-img"
-											style="background-image: url('./images/event/sunset-1.jpg');">
-										</div>
-									</div>
-									<div class="card-body">
-										<p class="grey">UPCOMING EVENTS - August 20, 2020</p>
-										<h2 class="card-title"><a href="event1.html" class=" zoo-text-gr">Sunset at the
-												Zoo, presented by
-												GrayRobinson</a></h2>
-										<p class="card-text">Sunset at the Zoo, presented by GrayRobinson is a wild
-											adults-only evening at the Zoo!</p>
-
-									</div>
-								</div>
-								<div class="item">
-									<div class="effectEvent">
-										<div class="eh-events-img"
-											style="background-image: url('./images/event/20072419-scaled.jpg');">
-										</div>
-									</div>
-									<div class="card-body">
-										<p class="grey">UPCOMING EVENTS - August 28, 2020</p>
-										<h2 class="card-title"><a href="event2.html" class=" zoo-text-gr">Family Sunset
-												at the Zoo</a>
-										</h2>
-										<p class="card-text">Family Sunset at the Zoo is a wild evening at the Zoo for
-											the whole family!</p>
-
-									</div>
-								</div>
-								<div class="item">
-									<div class="effectEvent">
-										<div class="eh-events-img"
-											style="background-image: url('./images/event/sunset1.jpg');">
-										</div>
-									</div>
-									<div class="card-body">
-										<p class="grey">UPCOMING EVENTS - September 17, 2020</p>
-										<h2 class="card-title"><a href="event3.html" class=" zoo-text-gr">Sunset at the
-												Zoo, presented by
-												GrayRobinson</a></h2>
-										<p class="card-text">Sunset at the Zoo is a wild adults-only evening at the Zoo!
-										</p>
-
-									</div>
-								</div>
-								<div class="item">
-									<div class="effectEvent">
-										<div class="eh-events-img"
-											style="background-image: url('./images/event/sunset2.jpg');">
-										</div>
-									</div>
-									<div class="card-body">
-										<p class="grey">UPCOMING EVENTS - October 15, 2020</p>
-										<h2 class="card-title"><a href="event4.html" class=" zoo-text-gr">Sunset at the
-												Zoo, presented by
-												GrayRobinson</a></h2>
-										<p class="card-text">Sunset at the Zoo is a wild adults-only evening at the Zoo!
-										</p>
-									</div>
-								</div>
+			<div class="row mt-4">
+				<div class="col-md-12 pt-2">
+					<div class="cont_breadcrumbs_1 text-center">
+						<ul>
+							<li><a href="index.html">Home Page</a></li>
+							<li><a href="event.html">Zoo Map</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-3">
+				<div class="col-md-12">
+					<div class="w-75 m-auto">
+						<div class="row box-content text-left">
+							<div class="col-md-12">
+                                <span class="zoom" id="imgMap">
+                                    <img src="images/maps/map.png" style="width: 100%;" alt="Roxy on the Ohoopee"/>
+                                </span>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-12 effUrl" style="margin-top: -25px;">
-						<div style="height: 50px;">
-							<a href="#Events" style="float: right; border-radius: 0;"
-								class="btn btn-primary border border-0 event">View More Events</a>
-						</div>
-					</div>
 				</div>
-			</main>
+			</div>
 		</div>
+		
 	</section>
+	<div id="map_canvas" style="width: 100%; height: 700px"></div>
 	<section class="container-fluid text-center mb-5">
 		<div class="row info-bt">
 			<div class="col-lg-6 p-5">
@@ -181,7 +119,7 @@
 			<div class="col-lg-3 p-5 bg-success text-white">
 				<h2 class="font-bold pb-4">PLAN YOUR VISIT</h2>
 				<img src="./images/map/map-thumb.png" style="max-width: 100%;">
-				<div class="font-22 text-left pt-4 effUrl"><a href="#Map" class="text-warning font-spacing map"><i
+				<div class="font-22 text-left pt-4 effUrl"><a href="#" class="text-warning font-spacing"><i
 							class="fa fa-angle-double-right"></i> Zoo Map</a></div>
 			</div>
 			<div class="col-lg-3 p-5">
@@ -281,7 +219,7 @@
 				<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 
 					<!-- Content -->
-					<h6 class="text-uppercase font-weight-bold"><a href="#HomePage" class="text-white homePage">Zoo Central</a></h6>
+					<h6 class="text-uppercase font-weight-bold">Zoo Central</h6>
 					<hr class="deep-purple mb-4 mt-0 d-inline-block mx-auto">
 					<p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
 						consectetur adipisicing elit.</p>
@@ -293,23 +231,22 @@
 				<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
 
 					<!-- Links -->
-					<h6 class="text-uppercase font-weight-bold"><a href="animals.html" class="text-white">ANIMALS</a>
-					</h6>
+					<h6 class="text-uppercase font-weight-bold">ANIMALS</h6>
 					<hr class="deep-purple mb-4 mt-0 d-inline-block mx-auto">
 					<p>
-						<a href="#!" class="text-white">Amphibians</a>
+						<a href="#!" class="text-decoration-none text-white">Amphibians</a>
 					</p>
 					<p>
-						<a href="#!" class="text-white">Invertebrates</a>
+						<a href="#!" class="text-decoration-none text-white">Invertebrates</a>
 					</p>
 					<p>
-						<a href="#!" class="text-white">Birds</a>
+						<a href="#!" class="text-decoration-none text-white">Birds</a>
 					</p>
 					<p>
-						<a href="#!" class="text-white">Mammals</a>
+						<a href="#!" class="text-decoration-none text-white">Mammals</a>
 					</p>
 					<p>
-						<a href="#!" class="text-white">Reptiles</a>
+						<a href="#!" class="text-decoration-none text-white">Reptiles</a>
 					</p>
 
 				</div>
@@ -319,19 +256,19 @@
 				<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
 
 					<!-- Links -->
-					<h6 class="text-uppercase font-weight-bold"><a href="#Events" class="text-white event">Event</a></h6>
+					<h6 class="text-uppercase font-weight-bold">Event</h6>
 					<hr class="deep-purple mb-4 mt-0 d-inline-block mx-auto">
 					<p>
-						<a href="event1.html" class=" text-white">GrayRobinson</a>
+						<a href="#Event1" class="event1 text-white">GrayRobinson</a>
 					</p>
 					<p>
 						<a href="#Event2" class="event2 text-white">Family Sunset</a>
 					</p>
 					<p>
-						<a href="event3.html" class=" text-white">Adults-only evening</a>
+						<a href="#Event3" class="event3 text-white">Adults-only evening</a>
 					</p>
 					<p>
-						<a href="event4.html" class=" text-white">Adults-only evening</a>
+						<a href="#Event4" class="event4 text-white">Adults-only evening</a>
 					</p>
 
 				</div>
@@ -341,8 +278,7 @@
 				<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
 
 					<!-- Links -->
-					<h6 class="text-uppercase font-weight-bold"><a href="#Contact" class="text-white contact">Contact</a></h6>
-					
+					<h6 class="text-uppercase font-weight-bold">Contact</h6>
 					<hr class="deep-purple mb-4 mt-0 d-inline-block mx-auto">
 					<p>
 						<i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
@@ -364,35 +300,16 @@
 		<hr>
 		<!-- Copyright -->
 		<div class="footer-copyright text-center py-3 effUrl">&copy; 2020 Copyright:
-			<a href="#homePage" class="homePage text-white"> Zoo Central</a>
+			<a href="index.html" class="text-decoration-none text-white"> Zoo Central</a>
 		</div>
 		<!-- Copyright -->
 
 	</footer>
 	<!-- Footer -->
 	<script>
-		jarallax(document.querySelectorAll('.jarallax'));
-		var owl = $('.owl-carousel');
-		owl.owlCarousel({
-			margin: 1,
-			loop: true,
-			autoplay: true,
-			autoplayTimeout: 3500,
-			dots: false,
-			responsive: {
-				0: {
-					items: 1
-				},
-				600: {
-					items: 2
-				},
-				1000: {
-					items: 3
-				}
-			}
-		})
+		initializeMap();
+        $('#imgMap').zoom({ on:'grab' });
 	</script>
-
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
