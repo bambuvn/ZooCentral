@@ -1,0 +1,42 @@
+/*
+ * Main theme
+*/
+header {
+  min-height: 100px;
+}
+
+main {
+  min-height: 100vh;
+}
+
+footer {
+  min-height: 100px;
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+.container-fluid .row {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.megamenu {
+  position: static;
+}
+.megamenu .dropdown-menu {
+  border: none;
+  width: 100%;
+}
