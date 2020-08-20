@@ -34,7 +34,7 @@ body {
     position: relative;
     overflow: hidden;
     width: 100%;
-    max-height: 650px;
+    height: 560px;
     min-height: 400px;
     background-color: #999;
 }
@@ -314,7 +314,6 @@ button.navbar-toggler {
 
 .gardient-dark {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, .25) 75%, rgba(0, 0, 0, .75) 100%);
-    background-color: rgba(0, 0, 0, .35);
     height: 100%;
     left: 0;
     position: absolute;
@@ -359,7 +358,8 @@ button.navbar-toggler {
     transform: skewX(-15deg);
     background-color: #fff;
     box-shadow: -2px 0px 20px -6px rgba(0, 0, 0, 0.5);
-    width: 30%;
+    width: 25%;
+    min-width: 150px;
     margin-left: -50px;
     transition: all 0.5s;
     list-style-type: none;
@@ -446,3 +446,191 @@ button.navbar-toggler {
 
 #imgMap img:hover { cursor: url(grab.cur), default; }
 #imgMap img:active { cursor: url(grabbed.cur), default; }
+
+.btn-buy{
+    height: 46px;
+    padding-top: 10px;
+}
+
+.cart-container{
+	position: fixed;
+	z-index: 999999;
+	cursor:  pointer;
+	top: 150px;
+	right: 0px;
+}
+.cart-group{
+	position: relative;
+	z-index: 999999;
+    float: right;
+    margin-right: 15px;
+}
+.cart-group .cart{
+	width: 40px;
+}
+.cart-group .badge{
+	position: absolute;
+	bottom: 70%;
+	right: 70%;
+	color: black;
+	background-color: white;
+}
+.cart-container:hover .badge{
+	background-color: black;
+	color: white;
+}
+#shopping-cart{
+	position: relative;
+	display: none;
+	top: 50px;
+	right: 12px;
+	background-color: #ffffff;
+	border-radius: 3px;
+	box-shadow: 0 3px 5px #303030FF;
+}
+.cart-container:hover #shopping-cart{
+	display: block;
+}
+#shopping-cart::before{
+	position: absolute;
+	bottom: 100%;
+	right: 17px;
+	content: "";
+	border: 7px solid;
+	border-color: transparent transparent #FFFFFFFF transparent;
+}
+.buzz{
+	animation-name: buzz;
+	animation-duration: 0.1s;
+}
+@keyframes buzz{
+	0%{right: 12px}
+	10%{right: 0px}
+	20%{right: 12px}
+	30%{right: 0px}
+	40%{right: 12px}
+	50%{right: 0px}
+	60%{right: 12px}
+	70%{right: 0px}
+	80%{right: 12px}
+	90%{right: 0px}
+	100%{right: 12px}
+}
+
+.transition{
+    transition: .35s .5s ease-in-out;
+}
+
+.each-animal-ct{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    height: 325px;
+    width: 100%;
+    margin-left: -4px;
+    vertical-align: top;
+    position: relative;
+}
+
+.each-animal-ct span {
+    bottom: 10px;
+    color: #fff;
+    font-size: 24px;
+    font-size: 2.4rem;
+    font-weight: 800;
+    left: 0;
+    letter-spacing: 1px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .5s;
+    width: 100%;
+    z-index: 1;
+}
+
+.each-animal-ct:hover h2,
+.each-animal-ct:hover span {
+    color: #bacf3e;
+    text-decoration: none
+}
+
+.each-animal-ct-inner-shadow{
+    background: linear-gradient(to bottom,rgba(255,255,255,0) 0,rgba(89,89,89,0) 74%,rgba(32,32,32,.58) 99%,rgba(30,30,30,.58) 100%);
+    bottom: 0;
+    height: 80%;
+    left: 0;
+    position: absolute;
+    transition: .5s;
+    width: 100%;
+}
+.each-animal-ct:hover .each-animal-ct-inner-shadow {
+    height: 100%
+}
+
+.tti-title h2{
+    border-bottom: #c3c3c3 solid 1px;
+    font-weight: 800;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.expert-image img {
+    border: #fff solid 10px;
+    border-radius: 50%;
+    width: 100%;
+}
+
+.wordsExperts p {
+    color: #6f6f6f;
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: .2px;
+    line-height: 1.8
+}
+.experts-name p {
+    padding-top: 17%
+}
+.h-800{
+    height: 800px;
+}
+.animals-container{
+    bottom: 0;
+    position: absolute;
+}
+
+.dyk-pad-top {
+    width: 65%;
+}
+
+.dyk-pad-top h3 {
+    color: #fff;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase
+}
+
+.dyk-pad-top p {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px
+}
+
+.row.animals-info{
+    margin-right:0;
+    margin-left: 0;
+}
+
+.animals-info .col-lg-12{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.animals-info h2{
+    font-size: 22px;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-transform: uppercase;
+}

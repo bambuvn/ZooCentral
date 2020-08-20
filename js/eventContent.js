@@ -1,7 +1,5 @@
 $(document).ready(function () {
     events();
-
-    
 });
 
 function events(){
@@ -146,10 +144,104 @@ function events(){
         $(".header-content #address").html('');
         scollToTop();
     });
+
+    $("a.tickets").click(function () {
+        $("#ticket-content").load("./modules/tickets.html");
+        $("div.zs-slideshow").css('z-index','-999');
+        $(".shadow-inner-content").addClass("d-none");
+        $(".header-event").removeClass("d-none");
+        $("title").text("Tickets - Zoo Central");
+        $(".jarallax-img").attr("src", "images/ticket/header.png");
+        $("#iconHeader").attr({
+            'data-src':'images/ticket/ticket-icon.png',
+            'src':'images/ticket/ticket-icon.png'
+        });
+        $('#iconHeader img').attr('src','images/ticket/ticket-icon.png');
+        $(".header-content #title").text("Tickets");
+        $(".header-content #date").html('Wildly fun events at the Central Florida Zoo');
+        $(".header-content #times").html('');
+        $(".header-content #address").html('');
+        scollToTop();
+    });
+
+    $("a.animals").click(function () {
+        $("#bd-content").load("./modules/animals.html");
+        $("div.zs-slideshow").css('z-index','-999');
+        $(".shadow-inner-content").addClass("d-none");
+        $(".header-event").removeClass("d-none");
+        $("title").text("Animals - Zoo Central");
+        $(".jarallax-img").attr("src", "images/animals/header.jpg");
+        $("#iconHeader").attr({
+            'data-src':'images/ico/amphibians_color.png',
+            'src':'images/ico/amphibians_color.png'
+        });
+        $('#iconHeader img').attr('src','images/ico/amphibians_color.png');
+        $(".header-content #title").text("Animals");
+        $(".header-content #date").html('Feathers, scales and fur—meet the Zoo’s wild residents.');
+        $(".header-content #times").html('');
+        $(".header-content #address").html('');
+        scollToTop();
+    });
+
+    $("a.amphibians").click(function () {
+        $("#bd-content").load("./modules/amphibians.html");
+        $("div.zs-slideshow").css('z-index','-999');
+        $(".shadow-inner-content").addClass("d-none");
+        $(".header-event").removeClass("d-none");
+        $("title").text("Amphibians - Zoo Central");
+        $(".jarallax-img").attr("src", "images/animals/amphibians/header.jpg");
+        $("#iconHeader").attr({
+            'data-src':'images/ico/amphibians_color.png',
+            'src':'images/ico/amphibians_color.png'
+        });
+        $('#iconHeader img').attr('src','images/ico/amphibians_color.png');
+        $(".header-content #title").text("Amphibians");
+        $(".header-content #date").html('Slimy and seriously cool.');
+        $(".header-content #times").html('');
+        $(".header-content #address").html('');
+        scollToTop();
+    });
+
+    $("a.poisonDartFrogs").click(function () {
+        $("#bd-content").load("./modules/poisonDartFrogs.html");
+        $("div.zs-slideshow").css('z-index','-999');
+        $(".shadow-inner-content").addClass("d-none");
+        $(".header-event").removeClass("d-none");
+        $("title").text("Poison Dart Frogs - Zoo Central");
+        $(".jarallax-img").attr("src", "images/animals/amphibians/1-1.jpg");
+        $("#iconHeader").attr({
+            'data-src':'images/ico/amphibians_color.png',
+            'src':'images/ico/amphibians_color.png'
+        });
+        $('#iconHeader img').attr('src','images/ico/amphibians_color.png');
+        $(".header-content #title").text("Poison Dart Frogs");
+        $(".header-content #date").html('Dendrobates spp.');
+        $(".header-content #times").html('');
+        $(".header-content #address").html('');
+        scollToTop();
+    });
+
+    $("a.tigerSalamander").click(function () {
+        $("#bd-content").load("./modules/tigerSalamander.html");
+        $("div.zs-slideshow").css('z-index','-999');
+        $(".shadow-inner-content").addClass("d-none");
+        $(".header-event").removeClass("d-none");
+        $("title").text("Tiger Salamander - Zoo Central");
+        $(".jarallax-img").attr("src", "images/animals/amphibians/2-1.jpg");
+        $("#iconHeader").attr({
+            'data-src':'images/ico/amphibians_color.png',
+            'src':'images/ico/amphibians_color.png'
+        });
+        $('#iconHeader img').attr('src','images/ico/amphibians_color.png');
+        $(".header-content #title").text("Tiger Salamander");
+        $(".header-content #date").html('Ambystoma tigrinum');
+        $(".header-content #times").html('');
+        $(".header-content #address").html('');
+        scollToTop();
+    });
 }
 function scollToTop(){
     $("html, body").animate({
         scrollTop: 0
-    }, 800);
-    return false;
+    }, 500);
 }
