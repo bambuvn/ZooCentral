@@ -165,8 +165,8 @@ iframe {
 .contact100-form-title {
   width: 100%;
   display: block;
-  font-family: Poppins-Regular;
   font-size: 30px;
+  font-weight: bold;
   color: #333333;
   line-height: 1.2;
   text-align: center;
@@ -194,8 +194,7 @@ iframe {
 }
 
 .label-input100 {
-  font-family: Poppins-Regular;
-  font-size: 12px;
+  font-size: 18px;
   color: #555555;
   line-height: 1.5;
   text-transform: uppercase;
@@ -430,6 +429,3 @@ textarea.input100 {
     opacity: 1;
   }
 }
-
-
-
