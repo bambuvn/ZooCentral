@@ -38,7 +38,7 @@ function events() {
         $(".shadow-inner-content").addClass("d-none");
         $(".header-event").removeClass("d-none");
         $("title").text("Tickets - Zoo Central");
-        $(".jarallax-img").attr("src", "images/ticket/header.png");
+        $("#image-header").attr("src", "images/ticket/header.png");
         $("#iconHeader").attr({
             'data-src': 'images/ico/ticket-icon.png',
             'src': 'images/ico/ticket-icon.png'
@@ -60,7 +60,7 @@ function events() {
             $(".shadow-inner-content").addClass("d-none");
             $(".header-event").removeClass("d-none");
             $("title").text("Events - Zoo Central");
-            $(".jarallax-img").attr("src", "images/event/ev-header.jpg");
+            $("#image-header").attr("src", "images/event/ev-header.jpg");
             $("#iconHeader").attr({
                 'data-src': 'images/ico/events.png',
                 'src': 'images/ico/events.png'
@@ -85,7 +85,7 @@ function events() {
             $(".shadow-inner-content").addClass("d-none");
             $(".header-event").removeClass("d-none");
             $("title").text("Sunset at the Zoo, presented by GrayRobinson - Zoo Central");
-            $(".jarallax-img").attr("src", "images/event/sunset-1.jpg");
+            $("#image-header").attr("src", "images/event/sunset-1.jpg");
             $("#iconHeader").attr({
                 'data-src': 'images/ico/events.png',
                 'src': 'images/ico/events.png'
@@ -109,7 +109,7 @@ function events() {
             $(".shadow-inner-content").addClass("d-none");
             $(".header-event").removeClass("d-none");
             $("title").text("Family Sunset at the Zoo - Zoo Central");
-            $(".jarallax-img").attr("src", "images/event/20072419-scaled.jpg");
+            $("#image-header").attr("src", "images/event/20072419-scaled.jpg");
             $("#iconHeader").attr({
                 'data-src': 'images/ico/events.png',
                 'src': 'images/ico/events.png'
@@ -133,7 +133,7 @@ function events() {
             $(".shadow-inner-content").addClass("d-none");
             $(".header-event").removeClass("d-none");
             $("title").text("Sunset at the Zoo, presented by GrayRobinson - Zoo Central");
-            $(".jarallax-img").attr("src", "images/event/sunset1.jpg");
+            $("#image-header").attr("src", "images/event/sunset1.jpg");
             $("#iconHeader").attr({
                 'data-src': 'images/ico/events.png',
                 'src': 'images/ico/events.png'
@@ -158,7 +158,7 @@ function events() {
             $(".shadow-inner-content").addClass("d-none");
             $(".header-event").removeClass("d-none");
             $("title").text("Sunset at the Zoo, presented by GrayRobinson - Zoo Central");
-            $(".jarallax-img").attr("src", "images/event/sunset2.jpg");
+            $("#image-header").attr("src", "images/event/sunset2.jpg");
             $("#iconHeader").attr({
                 'data-src': 'images/ico/events.png',
                 'src': 'images/ico/events.png'
@@ -183,7 +183,7 @@ function events() {
             $(".shadow-inner-content").addClass("d-none");
             $(".header-event").removeClass("d-none");
             $("title").text("Map of the Zoo - Zoo Central");
-            $(".jarallax-img").attr("src", "images/maps/header-map.jpg");
+            $("#image-header").attr("src", "images/maps/header-map.jpg");
             $("#iconHeader").attr({
                 'data-src': 'images/ico/animals_header.png',
                 'src': 'images/ico/animals_header.png'
@@ -208,7 +208,7 @@ function events() {
             $(".shadow-inner-content").addClass("d-none");
             $(".header-event").removeClass("d-none");
             $("title").text("Contact - Zoo Central");
-            $(".jarallax-img").attr("src", "images/contact-header.jpg");
+            $("#image-header").attr("src", "images/contact-header.jpg");
             $("#iconHeader").attr({
                 'data-src': 'images/ico/animals_header.png',
                 'src': 'images/ico/animals_header.png'
@@ -234,7 +234,7 @@ function events() {
             $(".shadow-inner-content").addClass("d-none");
             $(".header-event").removeClass("d-none");
             $("title").text("Animals - Zoo Central");
-            $(".jarallax-img").attr("src", "images/animals/header.jpg");
+            $("#image-header").attr("src", "images/animals/header.jpg");
             $("#iconHeader").attr({
                 'data-src': 'images/ico/amphibians_color.png',
                 'src': 'images/ico/amphibians_color.png'
@@ -259,7 +259,7 @@ function events() {
             $(".shadow-inner-content").addClass("d-none");
             $(".header-event").removeClass("d-none");
             $("title").text("Amphibians - Zoo Central");
-            $(".jarallax-img").attr("src", "images/animals/amphibians/header.jpg");
+            $("#image-header").attr("src", "images/animals/amphibians/header.jpg");
             $("#iconHeader").attr({
                 'data-src': 'images/ico/amphibians_color.png',
                 'src': 'images/ico/amphibians_color.png'
@@ -285,7 +285,7 @@ function events() {
             $(".shadow-inner-content").addClass("d-none");
             $(".header-event").removeClass("d-none");
             $("title").text("Poison Dart Frogs - Zoo Central");
-            $(".jarallax-img").attr("src", "images/animals/amphibians/1-1.jpg");
+            $("#image-header").attr("src", "images/animals/amphibians/1-1.jpg");
             $("#iconHeader").attr({
                 'data-src': 'images/ico/amphibians_color.png',
                 'src': 'images/ico/amphibians_color.png'
@@ -311,7 +311,7 @@ function events() {
             $(".shadow-inner-content").addClass("d-none");
             $(".header-event").removeClass("d-none");
             $("title").text("Tiger Salamander - Zoo Central");
-            $(".jarallax-img").attr("src", "images/animals/amphibians/2-1.jpg");
+            $("#image-header").attr("src", "images/animals/amphibians/2-1.jpg");
             $("#iconHeader").attr({
                 'data-src': 'images/ico/amphibians_color.png',
                 'src': 'images/ico/amphibians_color.png'
@@ -335,7 +335,7 @@ function events() {
             $(".shadow-inner-content").addClass("d-none");
             $(".header-event").removeClass("d-none");
             $("title").text("Tiger Salamander - Zoo Central");
-            $(".jarallax-img").attr("src", "images/animals/amphibians/2-1.jpg");
+            $("#image-header").attr("src", "images/animals/amphibians/2-1.jpg");
             $("#iconHeader").attr({
                 'data-src': 'images/ico/amphibians_color.png',
                 'src': 'images/ico/amphibians_color.png'
