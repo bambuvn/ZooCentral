@@ -324,7 +324,30 @@ function events() {
             $("#bd-content").removeClass('d-none');
             scollToTop();
         });
+        return false;
+    });
+    $("a.test").click(function () {
 
+        $("#bd-content").load("./modules/test.html", function () {
+            $("#ticket-content").addClass('d-none');
+            $("#content-home").addClass('d-none');
+            $("div.zs-slideshow").css('z-index', '-999');
+            $(".shadow-inner-content").addClass("d-none");
+            $(".header-event").removeClass("d-none");
+            $("title").text("Tiger Salamander - Zoo Central");
+            $(".jarallax-img").attr("src", "images/animals/amphibians/2-1.jpg");
+            $("#iconHeader").attr({
+                'data-src': 'images/ico/amphibians_color.png',
+                'src': 'images/ico/amphibians_color.png'
+            });
+            $('#iconHeader img').attr('src', 'images/ico/amphibians_color.png');
+            $(".header-content #title").text("Tiger Salamander");
+            $(".header-content #date").html('Ambystoma tigrinum');
+            $(".header-content #times").html('');
+            $(".header-content #address").html('');
+            $("#bd-content").removeClass('d-none');
+            scollToTop();
+        });
         return false;
     });
 }
