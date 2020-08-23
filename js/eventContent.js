@@ -226,7 +226,6 @@ function events() {
     });
 
     $("a.animals").click(function () {
-
         $("#bd-content").load("./modules/animals.html", function () {
             $("#ticket-content").addClass('d-none');
             $("#content-home").addClass('d-none');
@@ -303,7 +302,6 @@ function events() {
     });
 
     $("a.tigerSalamander").click(function () {
-
         $("#bd-content").load("./modules/tigerSalamander.html", function () {
             $("#ticket-content").addClass('d-none');
             $("#content-home").addClass('d-none');
@@ -326,6 +324,205 @@ function events() {
         });
         return false;
     });
+
+    $("a.amazonMilkFrog").click(function () {
+        $("#bd-content").load("./modules/amazonMilkFrog.html", function () {
+            $("#ticket-content").addClass('d-none');
+            $("#content-home").addClass('d-none');
+            $("div.zs-slideshow").css('z-index', '-999');
+            $(".shadow-inner-content").addClass("d-none");
+            $(".header-event").removeClass("d-none");
+            // Title
+            $("title").text("Amazon Milk Frog - Zoo Central");
+            // Image header
+            $("#image-header").attr("src", "images/animals/amphibians/3-1.jpg");
+            $("#iconHeader").attr({
+                'data-src': 'images/ico/amphibians_color.png',
+                'src': 'images/ico/amphibians_color.png'
+            });
+            $('#iconHeader img').attr('src', 'images/ico/amphibians_color.png');
+            //Text header
+            $(".header-content #title").text("Amazon Milk Frog");
+            $(".header-content #date").html('Trachycephalus resinifictrix');
+            $(".header-content #times").html('');
+            $(".header-content #address").html('');
+            $("#bd-content").removeClass('d-none');
+            scollToTop();
+        });
+        return false;
+    });
+
+    $("a.africanBullfrog").click(function () {
+        $("#bd-content").load("./modules/africanBullfrog.html", function () {
+            $("#ticket-content").addClass('d-none');
+            $("#content-home").addClass('d-none');
+            $("div.zs-slideshow").css('z-index', '-999');
+            $(".shadow-inner-content").addClass("d-none");
+            $(".header-event").removeClass("d-none");
+            // Title
+            $("title").text("African Bullfrog - Zoo Central");
+            // Image header
+            $("#image-header").attr("src", "images/animals/amphibians/4-1.jpg");
+            $("#iconHeader").attr({
+                'data-src': 'images/ico/amphibians_color.png',
+                'src': 'images/ico/amphibians_color.png'
+            });
+            $('#iconHeader img').attr('src', 'images/ico/amphibians_color.png');
+            //Text header
+            $(".header-content #title").text("African Bullfrog");
+            $(".header-content #date").html('African Bullfrog');
+            $(".header-content #times").html('');
+            $(".header-content #address").html('');
+            $("#bd-content").removeClass('d-none');
+            scollToTop();
+        });
+        return false;
+    });
+
+    $("a.whitesTreeFrog").click(function () {
+        $("#bd-content").load("./modules/whitesTreeFrog.html", function () {
+            $("#ticket-content").addClass('d-none');
+            $("#content-home").addClass('d-none');
+            $("div.zs-slideshow").css('z-index', '-999');
+            $(".shadow-inner-content").addClass("d-none");
+            $(".header-event").removeClass("d-none");
+            // Title
+            $("title").text("White’s Tree Frog - Zoo Central");
+            // Image header
+            $("#image-header").attr("src", "images/animals/amphibians/5-1.jpg");
+            $("#iconHeader").attr({
+                'data-src': 'images/ico/amphibians_color.png',
+                'src': 'images/ico/amphibians_color.png'
+            });
+            $('#iconHeader img').attr('src', 'images/ico/amphibians_color.png');
+            //Text header
+            $(".header-content #title").text("White’s Tree Frog");
+            $(".header-content #date").html('Litoria caerulea');
+            $(".header-content #times").html('');
+            $(".header-content #address").html('');
+            $("#bd-content").removeClass('d-none');
+            scollToTop();
+        });
+        return false;
+    });
+
+    $("a.birds").click(function () {
+        $("#bd-content").load("./modules/birds.html", function () {
+            $("#ticket-content").addClass('d-none');
+            $("#content-home").addClass('d-none');
+            $("div.zs-slideshow").css('z-index', '-999');
+            $(".shadow-inner-content").addClass("d-none");
+            $(".header-event").removeClass("d-none");
+            $("title").text("Birds - Zoo Central");
+            $("#image-header").attr("src", "images/animals/birds/header.jpg");
+            $("#iconHeader").attr({
+                'data-src': 'images/ico/birds.svg',
+                'src': 'images/ico/birds.svg'
+            });
+            $('#iconHeader img').attr('src', 'images/ico/birds.svg');
+            $(".header-content #title").text("Birds");
+            $(".header-content #date").html('Fly into fun with our feathered residents.');
+            $(".header-content #times").html('');
+            $(".header-content #address").html('');
+            $("#bd-content").removeClass('d-none');
+            scollToTop();
+        });
+
+        return false;
+    });
+
+    $("a.invertebrates").click(function () {
+        $("#bd-content").load("./modules/invertebrates.html", function () {
+            $("#ticket-content").addClass('d-none');
+            $("#content-home").addClass('d-none');
+            $("div.zs-slideshow").css('z-index', '-999');
+            $(".shadow-inner-content").addClass("d-none");
+            $(".header-event").removeClass("d-none");
+            $("title").text("Invertebrates - Zoo Central");
+            $("#image-header").attr("src", "images/animals/invertebrates/header.jpg");
+            $("#iconHeader").attr({
+                'data-src': 'images/ico/invertebrates.svg',
+                'src': 'images/ico/invertebrates.svg'
+            });
+            $('#iconHeader img').attr('src', 'images/ico/invertebrates.svg');
+            $(".header-content #title").text("Invertebrates");
+            $(".header-content #date").html('Get to know our creepy crawlers.');
+            $(".header-content #times").html('');
+            $(".header-content #address").html('');
+            $("#bd-content").removeClass('d-none');
+            scollToTop();
+        });
+
+        return false;
+    });
+
+    $("a.mammals").click(function () {
+        $("#bd-content").load("./modules/mammals.html", function () {
+            $("#ticket-content").addClass('d-none');
+            $("#content-home").addClass('d-none');
+            $("div.zs-slideshow").css('z-index', '-999');
+            $(".shadow-inner-content").addClass("d-none");
+            $(".header-event").removeClass("d-none");
+            $("title").text("Mammals - Zoo Central");
+            $("#image-header").attr("src", "images/animals/mammals/header.jpg");
+            $("#iconHeader").attr({
+                'data-src': 'images/ico/mammals.svg',
+                'src': 'images/ico/mammals.svg'
+            });
+            $('#iconHeader img').attr('src', 'images/ico/mammals.svg');
+            $(".header-content #title").text("Mammals");
+            $(".header-content #date").html('Get to know mammals from around the globe.');
+            $(".header-content #times").html('');
+            $(".header-content #address").html('');
+            $("#bd-content").removeClass('d-none');
+            scollToTop();
+        });
+
+        return false;
+    });
+
+    $("a.reptiles").click(function () {
+        $("#bd-content").load("./modules/reptiles.html", function () {
+            $("#ticket-content").addClass('d-none');
+            $("#content-home").addClass('d-none');
+            $("div.zs-slideshow").css('z-index', '-999');
+            $(".shadow-inner-content").addClass("d-none");
+            $(".header-event").removeClass("d-none");
+            $("title").text("Reptiles - Zoo Central");
+            $("#image-header").attr("src", "images/animals/reptiles/header.jpg");
+            $("#iconHeader").attr({
+                'data-src': 'images/ico/reptiles.svg',
+                'src': 'images/ico/reptiles.svg'
+            });
+            $('#iconHeader img').attr('src', 'images/ico/reptiles.svg');
+            $(".header-content #title").text("Reptiles");
+            $(".header-content #date").html('Warm up to our cold-blooded species.');
+            $(".header-content #times").html('');
+            $(".header-content #address").html('');
+            $("#bd-content").removeClass('d-none');
+            scollToTop();
+        });
+
+        return false;
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     $("a.test").click(function () {
 
         $("#bd-content").load("./modules/test.html", function () {
@@ -355,5 +552,5 @@ function events() {
 function scollToTop() {
     $('html, body').stop().animate({
         scrollTop: 0
-    }, 1000);
+    }, 800);
 }
