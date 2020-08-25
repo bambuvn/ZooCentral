@@ -4,13 +4,13 @@
 <head>
 
     <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
     <script src="js/eventContent.js"></script>
 
     <script>
         initializeMap();
         var input = $('.validate-input .input100');
-
-        $('.validate-form').on('submit', function () {
+        $('button').click(function () {
             var check = true;
             for (var i = 0; i < input.length; i++) {
                 if (validate(input[i]) == false) {
@@ -18,8 +18,17 @@
                     check = false;
                 }
             }
-            if(check){
-                alert('ok');
+            if (check) {
+                var fname = $('#first-name').val();
+                $('input, textarea').val("");
+                swal({
+                    type: 'success',
+                    title: 'Successful',
+                    html: `
+						<h4>Hi ` + fname  + `</h4>
+						<h4 class="text-success">Thanks for your feedback, we will check and reply as soon as we can</h4>`,
+                    confirmButtonText: 'Done!'
+                });
             }
             return check;
         });
@@ -54,7 +63,8 @@
 
             $(thisAlert).removeClass('alert-validate');
         }
-        function ok(){
+
+        function ok() {
             alert("ok");
         }
     </script>
@@ -109,7 +119,7 @@
                     </div>
 
                     <div class="container-contact100-form-btn">
-                        <input type="submit" class="contact100-form-btn" value="Send Message">
+                        <button type="button" class="contact100-form-btn">Send Message </button>
                     </div>
                 </form>
 
@@ -166,6 +176,41 @@
             <div id="map_canvas" style="height: 800px" class="mb-4"></div>
         </div>
     </section>
+    <div class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-notify modal-success" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                    <p class="heading lead">Modal Success</p>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="white-text">&times;</span>
+                    </button>
+                </div>
+
+                <!--Body-->
+                <div class="modal-body">
+                    <div class="text-center">
+                        <i class="fas fa-check fa-4x mb-3 animated rotateIn"></i>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit iusto nulla aperiam
+                            blanditiis
+                            ad consequatur in dolores culpa, dignissimos, eius non possimus fugiat. Esse ratione fuga,
+                            enim,
+                            ab officiis totam.</p>
+                    </div>
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer justify-content-center">
+                    <a type="button" class="btn btn-success">Get it now <i class="far fa-gem ml-1 text-white"></i></a>
+                    <a type="button" class="btn btn-outline-success waves-effect" data-dismiss="modal">No, thanks</a>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
 </body>
 
 </html>
