@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <script src="js/eventContent.js"></script>
+
+    <script>
+        initializeMap();
+        var input = $('.validate-input .input100');
+        $('button').click(function () {
+            var check = true;
+            for (var i = 0; i < input.length; i++) {
+                if (validate(input[i]) == false) {
+                    showValidate(input[i]);
+                    check = false;
+                }
+            }
+            if (check) {
+                var fname = $('#first-name').val();
+                $('input, textarea').val("");
+                swal({
+                    type: 'success',
+                    title: 'Successful',
+                    html: `
+						<h4>Hi ` + fname  + `</h4>
+						<h4 class="text-success">Thanks for your feedback, we will check and reply as soon as we can</h4>`,
+                    confirmButtonText: 'Done!'
+                });
+            }
+            return check;
+        });
+
+        $('.validate-form .input100').each(function () {
+            $(this).focus(function () {
+                hideValidate(this);
+            });
+        });
+
+        function validate(input) {
+            if ($(input).attr('type') == 'email' || $(input).attr('name') == 'email') {
+                if ($(input).val().trim().match(
+                        /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/
+                    ) == null) {
+                    return false;
+                }
+            } else {
+                if ($(input).val().trim() == '') {
+                    return false;
+                }
+            }
+        }
+
+        function showValidate(input) {
+            var thisAlert = $(input).parent();
+            $(thisAlert).addClass('alert-validate');
+        }
+
+        function hideValidate(input) {
+            var thisAlert = $(input).parent();
+
+            $(thisAlert).removeClass('alert-validate');
+        }
+
+        function ok() {
+            alert("ok");
+        }
+    </script>
+</head>
+
+<body>
+    <section class="container-fluid">
+        <div class="row mt-2">
+            <div class="col-md-12 pt-2">
+                <div class="cont_breadcrumbs_1 text-center">
+                    <ul>
+                        <li><a href="#HomePage" class="homePage">Home Page</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-contact100">
+            <div class="wrap-contact100">
+                <form class="contact100-form validate-form" method="GET">
+                    <span class="contact100-form-title">
+                        Send Us A Message
+                    </span>
+
+                    <label class="label-input100" for="first-name">Tell us your name *</label>
+                    <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
+                        <input id="first-name" class="input100" type="text" name="first-name" placeholder="First name">
+                        <span class="focus-input100"></span>
+                    </div>
+                    <div class="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Type last name">
+                        <input class="input100" type="text" name="last-name" placeholder="Last name">
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <label class="label-input100" for="email">Enter your email *</label>
+                    <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                        <input id="email" class="input100" type="text" name="email" placeholder="Eg. example@email.com">
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <label class="label-input100" for="phone">Enter phone number</label>
+                    <div class="wrap-input100">
+                        <input id="phone" class="input100" type="tel" name="phone" placeholder="Eg. +1 800 000000">
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <label class="label-input100" for="message">Message *</label>
+                    <div class="wrap-input100 validate-input" data-validate="Message is required">
+                        <textarea id="message" class="input100" name="message"
+                            placeholder="Write us a message"></textarea>
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <div class="container-contact100-form-btn">
+                        <button type="button" class="contact100-form-btn">Send Message </button>
+                    </div>
+                </form>
+
+                <div class="contact100-more flex-col-c-m" style="background-image: url('images/contact.jpg');">
+                    <div class="flex-w size1 p-b-47">
+                        <div class="txt1 p-r-20">
+                            <span class="lnr lnr-map-marker"></span>
+                        </div>
+
+                        <div class="flex-col size2">
+                            <span class="txt1 p-b-20">
+                                Address
+                            </span>
+
+                            <span class="txt2">
+                                590 Cach Mang Thang 8 Street, District 3, Ho Chi Minh City, Viet Nam
+                            </span>
+                        </div>
+                    </div>
+                    <div class="dis-flex size1 p-b-47">
+                        <div class="txt1 p-r-20">
+                            <span class="lnr lnr-phone-handset"></span>
+                        </div>
+
+                        <div class="flex-col size2">
+                            <span class="txt1 p-b-20">
+                                Lets Talk
+                            </span>
+                            <span class="txt3">
+                                +1 800 1236879
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="dis-flex size1 p-b-47">
+                        <div class="txt1 p-r-20">
+                            <span class="lnr lnr-envelope"></span>
+                        </div>
+
+                        <div class="flex-col size2">
+                            <span class="txt1 p-b-20">
+                                General Support
+                            </span>
+
+                            <span class="txt3">
+                                contact@example.com
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m-auto w-75">
+            <div id="map_canvas" style="height: 800px" class="mb-4"></div>
+        </div>
+    </section>
+    <div class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-notify modal-success" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                    <p class="heading lead">Modal Success</p>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="white-text">&times;</span>
+                    </button>
+                </div>
+
+                <!--Body-->
+                <div class="modal-body">
+                    <div class="text-center">
+                        <i class="fas fa-check fa-4x mb-3 animated rotateIn"></i>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit iusto nulla aperiam
+                            blanditiis
+                            ad consequatur in dolores culpa, dignissimos, eius non possimus fugiat. Esse ratione fuga,
+                            enim,
+                            ab officiis totam.</p>
+                    </div>
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer justify-content-center">
+                    <a type="button" class="btn btn-success">Get it now <i class="far fa-gem ml-1 text-white"></i></a>
+                    <a type="button" class="btn btn-outline-success waves-effect" data-dismiss="modal">No, thanks</a>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+</body>
+
+</html>
